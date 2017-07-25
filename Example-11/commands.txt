@@ -1,0 +1,8 @@
+robot --name Math --output old_output.xml --log old_log.html --report old_report.html *.robot
+
+# Fix the error in div.robot and run only failed test cases
+robot --rerunfailed old_output.xml --name Math --output new_output.xml --log new_log.html --report new_report.html *.robot
+
+# Merge the xml files to generate final log and report files
+rebot --log final_log.html --report final_report.html --merge old_output.xml new_output.xml
+

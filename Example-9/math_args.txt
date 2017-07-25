@@ -1,0 +1,8 @@
+--name Math_Operations
+--metadata Math: Add_Sub
+# Change the output directory
+--outputdir /root/logs
+--output math.xml 
+--log math_log.html 
+--report math_report.html
+--timestampoutputs
